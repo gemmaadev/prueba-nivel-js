@@ -7,8 +7,8 @@ export function fizzBuzzLogic(userNumber) {
   const FIZZ_DIVISOR = 3;
   const BUZZ_DIVISOR = 5;
 
-  let message;
-  let result;
+  let message = "";
+  let result = "";
 
   // Funcional: Si el número ingresado es divisible por 3 y 5, se muestra FizzBuzz.
   if (userNumber % (FIZZ_DIVISOR * BUZZ_DIVISOR) === 0) {

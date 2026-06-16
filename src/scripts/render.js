@@ -32,7 +32,17 @@ export function renderUi() {
 
       const result = fizzBuzzLogic(inputNumber);
 
-      result.innerHTML = `<li>${result.message}</li>`;
+      fizzBuzzResult.innerHTML = `<li>${result.message}</li>`;
+
+      historyLog(result);
+
+      const history = getHistoryLog();
+      historyLogsResult.innerHTML = history
+        .map(
+          (item) =>
+            `<li>Message: ${item.message} | User number:  ${item.userNumber} |  Result: ${item.result}</li>`,
+        )
+        .join("");
 
       forms.reset();
     } catch (error) {
