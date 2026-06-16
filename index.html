@@ -1,0 +1,31 @@
+<!-- * Crear una página HTML con un campo de entrada (input) para recibir un número, un botón para procesarlo y una sección donde se muestren los resultados
+* Al presionar el botón, mostrar el resultado en pantalla según las reglas de FizzBuzz.
+* Se mantiene un historial de los valores ingresados y sus respectivos resultados. -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the FizzBuzz game!</h1>
+    </header>
+    <main>
+      <form id="fizzbuzz-form">
+        <label for="user-number">Introduce a number</label>
+        <input type="number" id="user-number" placeholder="E.g: 2" required />
+        <button type="submit">Go for it!</button>
+        <ul id="fizzbuzz-result"></ul>
+      </form>
+
+      <section class="history-section">
+        <h2>History logs</h2>
+        <ul id="History-logs-result"></ul>
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
